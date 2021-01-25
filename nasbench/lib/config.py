@@ -24,7 +24,7 @@ FLAGS = flags.FLAGS
 
 # Data flags (only required for generating the dataset)
 flags.DEFINE_list(
-    'train_data_files', ['/content/train1.tfrecords','/content/train2.tfrecords','/content/train3.tfrecords','/content/train4.tfrecords',],
+    'train_data_files', ['/content/train1.tfrecords','/content/train2.tfrecords','/content/train3.tfrecords','/content/train4.tfrecords'],
     'Training data files in TFRecord format. Multiple files can be passed in a'
     ' comma-separated list. The first file in the list will be used for'
     ' computing the training error.')
