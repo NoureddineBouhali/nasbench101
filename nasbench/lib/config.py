@@ -24,16 +24,16 @@ FLAGS = flags.FLAGS
 
 # Data flags (only required for generating the dataset)
 flags.DEFINE_list(
-    'train_data_files', ['/content/train1.tfrecord','/content/train2.tfrecord','/content/train3.tfrecord','/content/train4.tfrecord',],
+    'train_data_files', ['/content/train1.tfrecords','/content/train2.tfrecords','/content/train3.tfrecords','/content/train4.tfrecords',],
     'Training data files in TFRecord format. Multiple files can be passed in a'
     ' comma-separated list. The first file in the list will be used for'
     ' computing the training error.')
 flags.DEFINE_string(
-    'valid_data_file', '/content/validation.tfrecord', 'Validation data in TFRecord format.')
+    'valid_data_file', '/content/validation.tfrecords', 'Validation data in TFRecord format.')
 flags.DEFINE_string(
-    'test_data_file', '/content/test.tfrecord', 'Testing data in TFRecord format.')
+    'test_data_file', '/content/test.tfrecords', 'Testing data in TFRecord format.')
 flags.DEFINE_string(
-    'sample_data_file', '/content/sample.tfrecord', 'Sampled batch data in TFRecord format.')
+    'sample_data_file', '/content/sample.tfrecords', 'Sampled batch data in TFRecord format.')
 flags.DEFINE_string(
     'data_format', 'channels_last',
     'Data format, one of [channels_last, channels_first] for NHWC and NCHW'
